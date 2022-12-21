@@ -1,25 +1,12 @@
 <?php
-    
+// Importo il file utilities all'interno dell'index
+include_once __DIR__ . "/utilities.php";
+
+
+
 if(isset($_POST["number"])){
     $numchars = $_POST["number"];
 }
-
-
-// var_dump($totalchart);
-
-function generatepassword($numchars){
-
-    $number ='12345678910';
-    $charsminuscole = 'abcdefghilmnopqrstuvzywx';  
-    $charsmaiuscole = 'ABCDEFGHILMNOPQRSTUVZYWX';
-    $specialchars = '*-+:_;.,!?=)(/&%$£^ì|';
-    
-    $sumchart = $number . $charsminuscole . $charsmaiuscole . $specialchars ;
-
-    return(substr(str_shuffle($sumchart),0,$numchars));
-    
-}
-
 
 ?>
 
