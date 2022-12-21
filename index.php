@@ -1,5 +1,8 @@
 <?php
-$numchars = $_POST["number"];
+    
+if(isset($_POST["number"])){
+    $numchars = $_POST["number"];
+}
 
 
 // var_dump($totalchart);
